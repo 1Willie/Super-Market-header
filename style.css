@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,15 +9,15 @@ body {
 }
 
 .navbar {
-  background-color: #e1e1e1; 
+  background-color: #e1e1e1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px; 
+  padding: 15px 60px;
 }
 
 .logo {
-  color: #5f5f2e; 
+  color: #5f5f2e;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 1px;
@@ -25,7 +25,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #4b6d28; 
+  color: #4b6d28;
   margin-left: 30px;
   font-weight: bold;
 }
