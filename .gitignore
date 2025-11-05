@@ -1,0 +1,9 @@
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore system files
+.DS_Store
+thumbs.db
+
+# Ignore history folder
+.history/
