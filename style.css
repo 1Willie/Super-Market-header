@@ -20,10 +20,10 @@ body {
 
 /* Inner container to center header content */
 .navbar .inner {
-  max-width: 1280px;
+  /* max-width: 1280px;  */
   height: 104px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,13 +35,12 @@ body {
   font-weight: 900;
   font-size: 24px;
   letter-spacing: 0;
-  padding: 0 50px;
 }
 
 /* Navigation links */
 .nav-links a {
   text-decoration: none;
-  color: #4B6D28;
+  color: #070906;
   margin-left: 30px;
   font-weight: 600;
   font-size: 16px;
@@ -56,11 +55,11 @@ body {
 /* Welcome Section */
 .welcome {
   background-color: #FFFFFF;
-  padding: 80px 100px;
+  padding: 50px 70px;
 }
 
 .container {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   text-align: left;
 }
@@ -70,7 +69,8 @@ body {
   font-size: 32px;
   font-weight: 700;
   color: #333333;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  padding-bottom: 20px;
 }
 
 /* Image Row */
@@ -106,7 +106,7 @@ body {
 
 /* Button */
 .btn {
-  background-color: #F8A441;
+  background-color: #F5D300;
   color: #FFFFFF;
   text-decoration: none;
   padding: 12px 28px;
