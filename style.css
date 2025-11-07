@@ -51,7 +51,6 @@ body {
   line-height: 1;
   transition: color 0.3s ease;
 }
-
 .nav-links a:hover {
   text-decoration: underline;
 }
