@@ -1,26 +1,36 @@
-
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Global styles */
+:root {
+  --text-color: #000;
+  --navbar-bg: rgba(217, 217, 217, 1);
+  --logo-color: rgba(79, 68, 0, 1);
+  --link-color: rgba(61, 96, 10, 1);
+  --btn-bg: rgba(245, 211, 0, 1);
+  --highlight-bg: rgba(61, 96, 10, 1);
+  --highlight-color: #fff;
+  --why-choose-bg: 
+  --card-bg: #F9F9F9;
+}
+
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  color: #333;
-  background-color: #fff;
+  color: var(--text-color);
+  background-color: var(--highlight-color);
 }
 
 /* Header / Navbar */
 .navbar {
-  background-color: rgba(217, 217, 217, 1);
+  background-color: var(--navbar-bg);
   width: 100%; 
 }
 
 /* Inner container to center header content */
 .navbar .inner {
-  /* max-width: 1280px;  */
   height: 104px;
   margin: 0 auto;
   padding: 0 70px;
@@ -31,7 +41,7 @@ body {
 
 /* Logo text */
 .logo {
-  color: rgba(79, 68, 0, 1);
+  color: var(--logo-color);
   font-weight: 900;
   font-size: 24px;
   letter-spacing: 0;
@@ -40,7 +50,7 @@ body {
 /* Navigation links */
 .nav-links a {
   text-decoration: none;
-  color: rgba(61, 96, 10, 1);
+  color: var(--link-color);
   margin-left: 30px;
   font-weight: 600;
   font-size: 16px;
@@ -54,12 +64,11 @@ body {
 
 /* Welcome Section */
 .welcome {
-  background-color: #FFFFFF;
+  background-color: var(--highlight-color);
   padding: 50px 70px;
 }
 
 .container {
-  /* max-width: 1280px; */
   margin: 0 auto;
   text-align: left;
 }
@@ -68,8 +77,7 @@ body {
 .welcome h2 {
   font-size: 32px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 1);
-  /* margin-bottom: 40px; */
+  color: var(--text-color);
   padding-bottom: 20px;
 }
 
@@ -84,7 +92,7 @@ body {
 /* Individual Image Cards */
 .image-card {
   flex: 1;
-  background-color: #F9F9F9;
+  background-color: var(--card-bg);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -94,27 +102,26 @@ body {
   width: 100%;
   display: block;
 }
+
 /* Paragraph description */
 .description {
-  color: #666666;
+  color: var(--text-color);
   line-height: 1.7;
   font-size: 16px;
   margin-bottom: 25px;
   max-width: 90%;
 }
 
-
 /* Button */
- .btn {
-  background-color: rgba(245, 211, 0, 1);
-  color:rgba(61, 96, 10, 1) ;
-  text-decoration: none;
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--link-color);
+  text-decoration : none;
   padding: 10px 20px;
   font-weight: bold;
   border-radius: 5px;
   position: relative;
   transition: background-color 0.3s;
-  
 }
 
 .btn::after {
@@ -126,12 +133,12 @@ body {
 .btn:hover::after {
   transform: translateX(4px); 
 }
+
 /* highlight-section */
- .highlight-section {
-  background-color: rgba(61, 96, 10, 1);
-  color: #fff;
+.highlight-section {
+  background-color: var(--highlight-bg);
+  color: var(--highlight-color);
   padding: 72px 0; 
- 	
 }  
 
 .highlight-section .container {
@@ -143,10 +150,62 @@ body {
 
 .highlight-section p {
   font-size: 1.4rem;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 1.6;
   margin: 0 auto;
   width: 80%;
   text-align: center;
   word-spacing: 2px;
+}
+
+/* WHY CHOOSE US SECTION */
+.why-choose {
+  background-color: var(--highlight-color);   
+  padding: 65px 0;             
+  color: var(--text-color);         
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.why-choose .container {
+  margin-left: 72px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 0;                  
+}
+
+/* Heading */
+.why-left h2 {
+  color: var(--text-color);
+  font-size: 32px;             
+  font-weight: 400;
+  margin: 0 0 18px 0;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Intro paragraph  */
+.why-intro {
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  font-style: italic;
+  max-width: 90%;
+}
+
+/* Bullet list */
+.why-list {
+  list-style-position: outside;
+  margin: 0 0 0 18px;     
+  padding: 0;
+  font-weight: 600;
+}
+
+.why-list li {
+  margin: 10px 0;
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 100%;
+  position: relative;
 }
